@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+         
+</body>
+</html>
+<script>
+    //1：原生ajax
+   var xhr = new XMLHttprequest();
+    xhr.open('get || post ', url);
+    Xhr.send(null);
+    Xhr. onreadystatechange = ()=>{
+        if(xhr.readyState==4&&xhr.status==200){
+            if(dataType=="text"||dataType=="TEXT"){}
+      }
+ 
+
+//跨域请求： 
+   var script = document.createElement("script");
+   var url = "www.baidu.com";
+   script.src = url;
+
+
+
+//2：jquery的ajax： 
+
+  $.ajax({
+     Type:"get || post",   //(get和post只是咱们常用的方法不代表就只有这几种自己百度看下。)
+     Url:"地址",   //(get请求的时候传参是   www.baidu.com?name = ‘lzd’&type=‘北京’) 
+     data:""  ,   // (post请求的时候传参是在data里面传以对象的方式传参 如{name:”lzd”,type:”北京”}),      
+     dataType:"json",
+     Success:(res)=>{   //成功的回调
+       console.log(res);
+     },
+    error(res){    //失败的回调
+      console.log(res);  
+      }
+})
+
+//3：vue中的获取数据：
+      使用的是axios   
+      Axios.get("url", {name:"lzd"}).then((res)=>{
+         console.log(res);  
+        }); 
+
+
+//4：es6新方法（只是我了解的）
+
+     isArray  //判断是不是数组是数组为true不是false
+     Array.from //把数组转换为真数组
+     Map  //映射
+     Filter //过滤
+     Includes //这个就是和es5里面的Indexof作用是一样的比indexof更加准确了
+     Typescript 
+     Let  const    箭头函数
+     promise  //异步操作     原生js中可以使用延迟函数setTimeout来进行异步
+     函数参数等等有了默认值
+     结构赋值   
+     字符串模板  //  console.log( `` );
+     New Set([..arr]);  set是去除重复的  还有…arr是转换为数组
+     
+     Es7新方法：  就是增加了一个异步函数在函数前面写  async    如：async function test(){}
+
+ 
+//5：h5的新方法（只是我了解的）
+     //  语义化标签
+     //  input新增属性
+     //  div可以读写属性  autofocus=true
+     //  canvas
+     //  本地存储    sessionStorage.setItem()     sessionStorage.getItem()    localStorage.getItem()  localStorage.setIetm()
+     //  离线缓存    manifest文件
+     //  地理定位
+     //  音频视频
+
+//6：c3的新方法  （只是我了解的）
+
+      //   box-sizing:border-box;  //这个属性有三个属性自己下去查
+      //   css3动画   css3过度    旋转  平移   2d旋转   3d旋转  缩小   倾斜
+      //   字体阴影    border-radius:;圆角   线性渐变   径性渐变  
+      //   媒体查询    还有尺寸计算的单位  如下面：
+      //   一个div包二个小div左边的div是固定宽度200px 让右边这个div自适应占满全屏   width:calc(100% - 200px);
+      //   最关键是flex布局
+
+//7： vue的生命周期   创建前-》创建后-》挂载前-》挂载后-》更新前-》更新后-》销毁前-》销毁后
+
+//8：  vue之间的传值
+      
+    //    <fater>                                                                        props:["name"]   这边是子组件接受
+    //    <children :name='要给子组件传的值' @名字=‘name’></children>                       this.$emit("名字"，要给父亲传的值);
+    //    </fater>
+    
+    //     自定义方法接受子传来的值     function 名字 （res）{console.log(res)  //res就是子传来的值}
+           
+    //    2个组件如果没有子父关系就要用到兄弟之间传值了  这个就不给你写了 百度上面有很多方法  （vuex也是可以实现）    
+
+
+//9: vuex有几个方法还有关于vuex的问题以及vuex是怎么使用的 ：
+
+//10: vue关于路由的问题   动态路由传参  等等。。。。
+
+//11：输入URL地址到显示到网页中这个过程发生了什么
+
+//12: 解释‘TCP的三次握手’、‘以及四次挥手
+
+//13：vue1.0和vue2.0有什么区别： 
+      //vue1.0的时候最外层不需要包裹一个标签  vue2.0需要
+      //vue1.0v-for的时候不需要些 :key='index'   vue2.0不写:key的时候回报错
+      //vue1.0有内置的filters过滤器   vue2.0把内置的filters过滤器给去掉了只能自己定义  (过滤器百度自己看看怎么定义和使用)
+      //vue1.0和vue2.0的生命周期不一样
+
+//14：字符串和数组的方法    不要只看单词不知道意思不知道怎么用记住看意思 ！！！！！！！！！
+
+
+
+//15：冒泡排序和快速排序原理和特点   
+
+// 有的问题答案在https://github.com/Liingot/ms.git 
+</script>

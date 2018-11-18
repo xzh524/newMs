@@ -120,5 +120,33 @@
 
 //15：冒泡排序和快速排序原理和特点   
 
+
+//数组去重（多记几种方法）
+   var arr = [1,1,1,12,3,4,2,321,1,1,1,1];  var arr2 = [];
+   for(var i=0;i<arr.length;i++){
+         for(var j=0;j<arr.length;j++){
+             if(arr2.includes(arr[j])){
+                   arr2.push(arr[j]);
+             }
+         }
+         return arr2;
+   }
+   console.log(arr2);  //这个是就手机原生的写法你百度看看别的能多记几个就是几个奥,includes是es6的我给你说过的就是和es5的indexof是一样的意思
+
+   new Set([1,1,1,1,2,2,3,3]) //new Set是es6的方法
+
+   
+ //数组排序
+     var arr = [23,1,133,2,3];
+     arr.sort((a,b)=>{
+        return a-b;
+     }); 
+     arr.sort((a,b)=>{
+        return b-a;
+     });  
+     //还有冒泡排序和快速排序
+
+ //就是jquery的方法等等！！！    
+
 // 有的问题答案在https://github.com/Liingot/ms.git 
 </script>
